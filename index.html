@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <header class="container p-4 text-center">
+        <h1>Project Tracker</h1>
+        <p>Welcome to your project tracker! Use this website to create and maintain a list of
+            projects you are working on with associated due dates.</p>
+        <time id="dateDiv" class="container">
+            <!-- Enter date elements here -->
+        </time>
+    </header>
+
+    <main>
+        <section id="instructions" class="row justify-content-center">
+            <div class="card w-50">
+                <div class="card-header">
+                    <h2>Instructions:</h2>
+                </div>
+                <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Step 1</li>
+                        <li class="list-group-item">Step 2</li>
+                        <li class="list-group-item">Step 3</li>
+                        <li class="list-group-item">Step 4</li>
+                    </ol>
+                </div>
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-primary" id="modalBtn">New Project</button>
+                </div>
+            </div>
+        </section>
+        <table class="table">
+            <!-- Enter Table elements & content here -->
+        </table>
+    </main>
+
+    <footer class="row text-center pt-3">
+        <h6>&copy DND Web Development 2023</h3>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
