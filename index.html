@@ -15,45 +15,45 @@
         <h1>Project Tracker</h1>
         <p>Welcome to your project tracker! Use this website to create and maintain a list of
             projects you are working on with associated due dates.</p>
-        <time class="container">
-            <!-- Enter date elements here -->
-            <p id="dateDiv"></p>
-        </time>
+        <time class="container" id="date"></time>
     </header>
 
     <main>
-        <section id="instructions" class="row justify-content-center">
-            <div class="card w-50">
+        <section id="instructions" class="row">
+            <div class="card col-12 col-md-6 col-lg-4 mx-1 ms-md-3 ms-lg-5">
                 <div class="card-header">
                     <h2>Instructions:</h2>
                 </div>
                 <div class="card-body">
                     <ol class="list-group list-group-numbered">
-                        <li class="list-group-item">Step 1</li>
-                        <li class="list-group-item">Step 2</li>
-                        <li class="list-group-item">Step 3</li>
-                        <li class="list-group-item">Step 4</li>
+                        <li class="list-group-item">Click New Project to add a project.</li>
+                        <li class="list-group-item">Fill in Project Name, Project Description and Due Date.</li>
+                        <li class="list-group-item">Past Due projects will display with a red background.</li>
+                        <li class="list-group-item">Projects due today will display with a green background.</li>
+                        <li class="list-group-item">Upcoming projects will display with a yellow background.</li>
                     </ol>
                 </div>
                 <div class="card-footer text-center">
                     <button type="button" class="btn btn-primary" id="modalBtn" data-bs-toggle="modal"
-                        data-bs-target="#modalForm">
+                        data-bs-target="#modal">
                         New Project
                     </button>
                     <!-- Modal -->
                     <!-- static backdrop prevents modal from closing when user clicks on background. data-bs-keyboard="false" prevents escape key from closing modal -->
-                    <div class="modal fade" id="modalForm" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="modalForm" aria-hidden="true">
+                    <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="modal" aria-hidden="true">
                         <!-- vertically centers the modal and makes it scrollable -->
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="modalLabel">New Project</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <form id="modalForm" name="modalForm" autocomplete="on">
+                                    
+                                    </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -75,6 +75,7 @@
         <h6>&copy DND Web Development 2023</h3>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
